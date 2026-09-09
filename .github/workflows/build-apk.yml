@@ -26,7 +26,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-          cache: gradle
 
       - name: Install web dependencies
         run: npm install
@@ -45,11 +44,15 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+
           p = Path('android/app/src/main/AndroidManifest.xml')
           s = p.read_text()
+
           perm = '    <uses-permission android:name="android.permission.RECORD_AUDIO" />\n'
+
           if 'android.permission.RECORD_AUDIO' not in s:
               s = s.replace('</manifest>', perm + '</manifest>')
+
           p.write_text(s)
           PY
 
