@@ -1,0 +1,45 @@
+{
+  "name": "flashenglish",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "clsx": "^2.1.1",
+    "dexie": "^4.4.5",
+    "dexie-react-hooks": "^4.4.0",
+    "docx": "^9.7.1",
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lucide-react": "^1.42.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "uuid": "^14.0.2",
+    "zustand": "^5.0.15",
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/core": "^7.4.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "@capacitor/cli": "^7.4.4"
+  }
+}
